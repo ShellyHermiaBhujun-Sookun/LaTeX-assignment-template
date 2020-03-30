@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+    
+%\usepackage{comment}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{units}
+\usepackage{harvard}
+\usepackage{float}
+
+\usepackage{blindtext}
+
+    \setlength{\parindent}{0pt}
+    %\maketitle
+\begin{titlepage}
+    \begin{center}
+    \includegraphics[scale=0.3]{uni.png}
+    \end{center}
+    \centering
+    \vskip0.5cm
+    
+    \large \Large{\underline{The university name and logo}}
+    
+    \vspace{5ex}
+    
+    {\bfseries
+        \LARGE \LaTeX \\ Assignment template \\
+        \vskip1cm
+        
+        \large Your name goes here \\ \vspace{1ex}\normalsize Student ID number: 12345678 \vskip1cm 
+        
+        \textbf{\Large Course name: \LaTeX \& Overleaf}\\ \vspace{1ex}
+        \large Lecturer: Dr Smart \vskip1.5cm
+        
+        \normalsize Date Month Year\\
+        \vskip2cm
+    }    
+    \vfill
+\end{titlepage}
+
+    \begin{document}
+
+\newpage
+\pagenumbering {roman}
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\newpage 
+\pagenumbering{arabic}
+
+\newpage
+
+\begin{abstract}
+    In case you need an abstract.\\
+    \blindtext
+\end{abstract}
+\cite{einstein}
+\newpage
+
+\section{Introduction}
+\blindtext \cite{kum}
+
+\section{Literature Review}
+\blindtext \cite{clark}
+
+\subsection{Subsection}
+\blindtext
+
+  \begin{figure}[h]
+    \begin{center}
+    \includegraphics[scale=0.55]{uni.png}
+    \caption{Johari Window (Reece and Brandt,2005)}
+    \end{center}
+ \end{figure}
+
+\subsubsection{Subsubsection}
+
+\subsection*{Different types of leadership styles}
+\begin{table}[h]
+\centering
+\caption{Different types of leadership styles}
+\label{tab:my-table}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}l |}
+\hline
+\multicolumn{2}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{1.  Autocratic leadership style}} \\ \hline
+Definition & \begin{tabular}[c]{@{}l@{}}Autocratic leadership style can be defined \\ as a phenomenon where the leader has \\ complete control over the organisational \\ decision-making procedures (Shrestha 2019 \\ cited Khan et al. 2015, p. 3) and employees,\\ consequently employees give very little input \\ and their autonomy is also low (Shrestha \\ 2019, p. 3)\end{tabular} \\ \hline
+Additional information & \begin{tabular}[c]{@{}l@{}}Considered to be a leadership approach \\ that is classical (Khan et al .2015, p. 88) \\ “Authoritarian Leader” choosesto concentrate \\ more on tasks and outcomes, and not on the \\ employees who are responsible for the \\ outcomes (Kalu Dolly and Okpokwasili \\ Nonyelum 2018, p. 215)\\    \\ Frequently utilized when decisions need \\ to be taken quickly (Kalu Dolly and \\ Okpokwasili Nonyelum 2018 cited Boehm \\ et al. 2015, p. 216), orders are given without \\ elucidation on imminent intentions or whys\\  and wherefores (Kalu Dolly and Okpokwasili \\ Nonyelum 2018 cited Iqbal et al. 2015, p. 216)\\        \\ The autocratic leader determine the employees’ \\ rules and assumes every employee will perform \\ their duties without questioning the leader’s \\ authority (Khan et al. 2015, p. 90)\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Methodology}
+\blindtext
+\subsection{Payback Period}
+Payback Period is a financial metric that calculates the period in which the initial investment is expected to be recovered. This method focus mainly on the cash inflows and earning capacity of the project. The formula will help to forecast whether an organization can accept the project or not as the results will help gauge the risks involved.\\
+
+$$year\:before\:payback\:year\; +\; \frac{unrecovered\:investment\:at\:start\:of\:payback\:year}{cash\:flow\:during\:payback\:year}$$ \\
+
+\begin{center}
+\begin{tabular}{ |p{2cm}|p{3cm}|p{4cm}| }
+ \hline
+ \multicolumn{3}{|c|}{\textbf{Payback period}} \\
+ \hline
+  &Cashflow &Cummulative cashflow\\
+ \hline
+ Year 1   & 132,000    & 132,000\\
+ Year 2   & 172,000    & 304,000\\
+ Year 3   & 252,000    & 556,000\\
+ Year 4   & 292,000    & 848,000\\
+ Year 5   & 332,000    & 1,180,000\\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{equation*}
+\begin{split}
+Payback\:period &= 1 +\frac{250,000 - 132,000}{172,000} \\
+ &= 1 +\frac{118,000}{172,000} \\
+ &= 1.686\:years
+\end{split}
+\end{equation*}
+
+Therefore, the \textit{\textbf{payback period}} is estimated to be 1.6 years. 
+
+\subsection{Net Present Value (NPV)}
+This is one of the most used methods for evaluating capital investment proposals. This specific technique shows how the cash inflow expected at different periods of time is discounted at a particular rate. The present values of the cash inflow are compared to the original investment. This method will help us forecast based on the positive or negative collected from this equation to accept or reject the project proposal. This equation takes into consideration the time value of money and is consistent with the objective of maximizing the company's profits.\\
+
+The Net Present Value equation:
+
+\begin{equation*}
+\begin{split}
+NPV &= \frac{\sum FCF}{(1+k)^n} - Initial\; Outlay \\
+ &= PV\:of\:inflow\; -\; PV\:of\:costs
+\end{split}
+\end{equation*}
+
+
+
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{ |c|c|c|c|c|c| } 
+ \hline
+  & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Year 4} & \textbf{Year 5} \\ \hline
+  & 3 projects & 4 projects & 6 projects & 7 projects & 8 projects \\ \hline
+ \textbf{Revenue} & 125,000 x 3 & 125,000 x 4 & 125,000 x 6 & 125,000 x 7 & 125,000 x 8 \\ \hline
+  & Rs 375,000 & Rs 500,000 & Rs 750,000 & Rs 875,000 & Rs 1,000,000 \\ \hline
+ \textit{Cash outflow} &  &  &  &  &  \\ \hline
+ \textbf{Bills} & 12,000 & 12,000 & 12,000 & 12,000 & 12,000 \\ \hline
+ \textbf{Wages} & 75,000 & 100,000 & 150,000 & 175,000 & 200,000 \\ \hline
+ \textbf{Freelance} & 45,000 & 60,000 & 90,000 & 105,000 & 120,000 \\ \hline
+  & 132,000 & 172,000 & 252,000 & 292,000 & 332,000 \\ \hline
+ \textbf{Discounted cashflow} & \nicefrac{132,000}{(1+0.1)^1} & \nicefrac{172,000}{(1+0.1)^2} & \nicefrac{252,000}{(1+0.1)^3} & \nicefrac{292,000}{(1+0.1)^4} & \nicefrac{332,000}{(1+0.1)^5} \\ \hline
+  & \textbf{120,000} & \textbf{142,148.76} & \textbf{189,331.33} & \textbf{199,439.93} & \textbf{206,145.88} \\ \hline
+\end{tabular}
+\end{scriptsize}
+\end{center}
+
+Cash outflows:\\
+Bills = (Rs 1000 x 12 months) = Rs12,000\\
+Wages = (Rs 25,000 x per project) The amount varies depending on the number of projects per year.\\
+Freelance = (Rs 15,000 x per project) The amount varies depending on the number of projects per year.\\
+
+Therefore, the total \textit{\textbf{discounted cashflow}} for the five years is Rs 857,065.9 and the total \textit{\textbf{NPV}} is Rs 607,065.9.\\
+
+\section{Result \& Analysis}
+\blindtext
+
+
+\section{Recommendations}
+\blindtext
+
+\section{Conclusion}
+\blindtext
+
+\bibliographystyle{agsm}
+\bibliography{resources}
+
+\end{document}
+
+
